@@ -13,27 +13,26 @@ describe Triangle do
 
     context "when 2 sides are same and 1 side is different" do
 
+      before do
+        @s1 = 2
+        @s2 = 1
+      end
+
       context "in the case of a-a-b" do
         it "should be isosceles" do
-          s1 = 2
-          s2 = 1
-          Triangle::type(s1, s1, s2).should eq("isosceles")
+          Triangle::type(@s1, @s1, @s2).should eq("isosceles")
         end
       end
 
       context "in the case of a-b-a" do
         it "should be isosceles" do
-          s1 = 2
-          s2 = 1
-          Triangle::type(s1, s2, s1).should eq("isosceles")
+          Triangle::type(@s1, @s2, @s1).should eq("isosceles")
         end
       end
 
       context "in the case of a-b-b" do
         it "should be isosceles" do
-          s1 = 2
-          s2 = 1
-          Triangle::type(s1, s2, s2).should eq("isosceles")
+          Triangle::type(@s1, @s2, @s2).should eq("isosceles")
         end
       end
 
