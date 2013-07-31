@@ -14,6 +14,14 @@ describe Triangle do
       end
     end
 
+    context "when 2 sides are same and 1 side is different" do
+      it "should be isosceles" do
+        s1 = 2
+        s2 = 1
+        Triangle::type(s1, s1, s2).should eq("isosceles")
+      end
+    end
+
   end
 
 end

@@ -1,7 +1,11 @@
 class Triangle
 
   def self.type(a, b, c)
-    "equilateral"
+    if (a == b) && (b == c)
+      "equilateral"
+    else
+      "isosceles"
+    end
   end
 
 end
