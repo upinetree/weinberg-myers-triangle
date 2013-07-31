@@ -1,0 +1,15 @@
+# design 
+
+* 引数3つとる
+* Triangleクラスの機能として判定する
+* Triangle::type(a, b, c)
+
+
+# test case
+
+* 正三角形
+* 二等辺三角形
+* その他の三角形
+* 三角形でない
+
+
