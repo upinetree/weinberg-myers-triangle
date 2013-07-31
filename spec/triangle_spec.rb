@@ -44,6 +44,12 @@ describe Triangle do
       end
     end
 
+    context "when triangle is invalid" do
+      it "should be not_triangle" do
+        Triangle::type(1, 4, 2).should eq("not_triangle")
+      end
+    end
+
   end
 
 end
